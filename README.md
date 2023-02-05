@@ -270,3 +270,4 @@ Notice how `getWeather` will take one parameter which indicates what to do AFTER
 If you are following step by step, you should be able to ask for the weather in your chat room.  Remember to ask nicely by ending with a question mark (?).  Otherwise now is a good time to catch up by looking at the full version of the code and comparing against your own.  
 
 Between Regular Expressions, JSON and Callbacks, we did cover quite a bit of ground on our server-side javascript skills, so do not worry if you are still munching over some of the concepts.  Keep asking questions.  
+# JS-Bot
