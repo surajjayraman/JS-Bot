@@ -1,8 +1,8 @@
-var socket = io();
+let socket = io();
 
 $("button").on('click', function() {
-  var text = $("#message").val();
-  var who = $("#initials").val();
+  let text = $("#message").val();
+  let who = $("#initials").val();
   
   socket.emit('message', who + ": " + text);
   $('#message').val('');
@@ -10,6 +10,6 @@ $("button").on('click', function() {
   return false;
 });
 
-socket.on('message', function (msg) {
+socket.on('message', function(msg) {
   $('<li>').text(msg).appendTo('#history');
 });
