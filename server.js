@@ -40,11 +40,12 @@ function askingWeather(msg) {
 function getWeather(callback) {
   console.log("Asking Weather");
   let request = require('request');
-  request.get("https://api.openweathermap.org/data/2.5/weather?lat=43.650108&lon=-79.382896&appid={api_key}", function(error, response) {
+  request.get("https://api.openweathermap.org/data/2.5/weather?id=6167865&units=metric&appid={api_key}", function(error, response) {
     console.log(response.statusCode);
     if (!error && response.statusCode == 200) {
       let data = JSON.parse(response.body);
-      callback(data.consolidated_weather[0].weather_state_name);
+      console.log(data);
+      callback(JSON.stringify(data));
     }
   });
 }
